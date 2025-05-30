@@ -1,14 +1,14 @@
 ---
-title: "Concept of Tidy Data, Vectors & Pivoting"
-subtitle: "CVEN 5837 - Summer 2023"
-author: "Lars Schöbitz"
+title: "{{< var md-05.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
     logo: img/logo.png
-    footer: "https://cven5873-ss23.github.io/website/"
+    footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
 execute:
   freeze: auto
