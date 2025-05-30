@@ -608,7 +608,7 @@ readr::read_csv(here::here("data/tbl-03-grading-scheme.csv")) |>
 - work not submitted by the due date will receive 0 pts
 - the lowest score for each of the assignments or learning reflections is dropped
 
-# Homework week 1 {background-color="#0F4C81"}
+# Homework week 2 {background-color="#0F4C81"}
 
 ## Homework due dates
 

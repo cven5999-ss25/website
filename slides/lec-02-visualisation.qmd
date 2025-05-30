@@ -470,7 +470,7 @@ knitr::include_graphics("img/lec-02/data-org-license.png")
 Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](https://github.com/kbroman/Talk_DataOrg)
 :::
 
-# Homework week 2 {background-color="#0F4C81"}
+# Homework week 3 {background-color="#0F4C81"}
 
 ## Bring your own data
 
