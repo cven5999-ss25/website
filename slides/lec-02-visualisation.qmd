@@ -480,7 +480,7 @@ Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](h
 
 ## Homework due dates
 
-- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-02.html)
+- All material on [course website]({{< var course.site >}}weeks/wk-02.html)
 - Homework assignment & learning reflection due: [**{{< var md-03.homework-due >}}**]{.highlight-yellow} 
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}

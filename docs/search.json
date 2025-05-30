@@ -276,8 +276,8 @@
     "objectID": "slides/lec-01-welcome.html#section-1",
     "href": "slides/lec-01-welcome.html#section-1",
     "title": "Welcome! & Data Science Life-cycle",
-    "section": "-",
-    "text": "-"
+    "section": "cven5999-ss25.github.io/website/ 🔖",
+    "text": "cven5999-ss25.github.io/website/ 🔖"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-2",
@@ -396,42 +396,42 @@
     "href": "slides/lec-01-welcome.html#section-21",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "-",
-    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
+    "text": "-\n\nAdd notes"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-22",
     "href": "slides/lec-01-welcome.html#section-22",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "-",
-    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
+    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-23",
     "href": "slides/lec-01-welcome.html#section-23",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "-",
-    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
+    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-24",
     "href": "slides/lec-01-welcome.html#section-24",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "-",
-    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
+    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-25",
     "href": "slides/lec-01-welcome.html#section-25",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "-",
-    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
+    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-26",
     "href": "slides/lec-01-welcome.html#section-26",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "-",
-    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
+    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-01b-data-science-lifecycle---data-science-lifecycle",
@@ -542,8 +542,8 @@
     "objectID": "slides/lec-01-welcome.html#section-27",
     "href": "slides/lec-01-welcome.html#section-27",
     "title": "Welcome! & Data Science Life-cycle",
-    "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n\n cven5999-ss25.github.io/website/"
+    "section": "-",
+    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
     "objectID": "index.html",
@@ -1765,5 +1765,19 @@
     "title": "CLAUDE.md",
     "section": "",
     "text": "Uses tidyverse packages for data manipulation and visualization\nAdditional packages: countdown, gt, here, knitr for enhanced functionality\nCode execution with Quarto’s freeze feature for reproducible builds"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-8",
+    "href": "slides/lec-01-welcome.html#section-8",
+    "title": "Welcome! & Data Science Life-cycle",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-28",
+    "href": "slides/lec-01-welcome.html#section-28",
+    "title": "Welcome! & Data Science Life-cycle",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n\n cven5999-ss25.github.io/website/"
   }
 ]

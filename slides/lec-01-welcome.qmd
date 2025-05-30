@@ -144,7 +144,7 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 - tidyverse R Packages
 - Quarto publishing system
 
-## [cven5873-ss23.github.io/website/](https://cven5873-ss23.github.io/website/) `r emo::ji("bookmark")`
+## [{{< var course.site-short >}}]({{< var course.site >}}) `r emo::ji("bookmark")`
 
 # Posit Cloud {background-color="#0F4C81"}
 
@@ -612,7 +612,7 @@ readr::read_csv(here::here("data/tbl-03-grading-scheme.csv")) |>
 
 ## Homework due dates
 
-- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-01.html)
+- All material on [course website]({{< var course.site >}}weeks/wk-01.html)
 - Homework assignment & learning reflection due: [**{{< var md-02.homework-due >}}**]{.highlight-yellow} 
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
