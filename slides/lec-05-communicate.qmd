@@ -4,7 +4,7 @@ subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
 format: 
   revealjs: 
-    theme: slides.scss
+    theme: ../style/slides.scss
     transition: fade
     slide-number: true
     logo: img/logo.png

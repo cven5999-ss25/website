@@ -340,7 +340,7 @@
     "href": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "live-01a-setup - Posit Cloud Setup",
-    "text": "live-01a-setup - Posit Cloud Setup\n\n\n\n\n\n\nFollow along on the screen\n\n\n\nOpen the GitHub organisation for the course: https://github.com/cven5873-ss23\nYou will find a repository titled: course-material-USERNAME (with your GitHub Username)\nYou will “clone” this repository to Posit Cloud"
+    "text": "live-01a-setup - Posit Cloud Setup\n\n\n\n\n\n\nFollow along on the screen\n\n\n\nOpen the GitHub organisation for the course: https://github.com/cven5999-ss25\nYou will find a repository titled: course-material-USERNAME (with your GitHub Username)\nYou will “clone” this repository to Posit Cloud"
   },
   {
     "objectID": "slides/lec-01-welcome.html#break",
@@ -536,7 +536,7 @@
     "href": "slides/lec-01-welcome.html#homework-due-dates",
     "title": "Welcome! & Data Science Life-cycle",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 16th"
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: 2025-06-13"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-27",
@@ -748,7 +748,7 @@
     "href": "weeks/wk-03.html#homework-assignment",
     "title": "Week 3",
     "section": " Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 3 on Posit Cloud\n\nhw-03a-data-visualisation.qmd\nhw-03b-project-data.qmd",
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 3 by 2025-06-20 on Posit Cloud\n\nhw-03a-data-visualisation.qmd\nhw-03b-project-data.qmd",
     "crumbs": [
       "Week 3"
     ]
@@ -1295,7 +1295,7 @@
     "href": "slides/lec-02-visualisation.html#homework-due-dates",
     "title": "Exploratory data analysis using visualization & Data organization in spreadsheets",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 23th"
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: 2025-06-20"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-4",
