@@ -148,18 +148,6 @@ waste_data_tidy |>
   facet_wrap(~waste_category, ncol = 5)
 ```
 
-## Exam Update
-
--   No exam anymore in Week 8
--   Due date for Capstone Project will be extended (due on 28th July)
--   Capstone Project contributes 40% to grade instead of 20%
-
-| type                 | percent |
-|----------------------|---------|
-| Homework assignments | 40      |
-| Learning reflections | 20      |
-| Capstone project     | 40      |
-
 ## Learning Objectives (for this week)
 
 ```{r}
@@ -587,7 +575,9 @@ ggplot(data = waste_data_tidy,
 
 ## 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub]({{< var course.github-org >}}/website/raw/main/slides/lec-04-tidy-data.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides as [PDF on GitHub]({{< var course.github-org >}}/website/raw/main/slides/lec-04-tidy-data.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 

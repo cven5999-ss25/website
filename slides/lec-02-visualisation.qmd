@@ -42,7 +42,7 @@ my_colors <- c("#ED6D37", "#901C6C", "#18A5C5", "#A6CE8F")
 Artwork by [@allison_horst](https://twitter.com/allison_horst) 
 :::
 
-# Solving coding problems {background-color="#0F4C81"}
+# Solving coding problems {background-color="#4C326A"}
 
 ## Tipps for search engines 
 
@@ -90,28 +90,14 @@ Artwork by [@allison_horst](https://twitter.com/allison_horst)
 
 :::
 
-## Give credit
+## Tipps for AI tools 
 
-![](img/lec-02/stack-overflow-share-1.png)
+- Use actionable verbs that describe what you want to do
+- Be specific 
+- Add R to the search query 
+- Add the name of the R package name to the search query
 
-## Give credit
-
-![](img/lec-02/stack-overflow-share-2.png)
-
-## Give credit {.smaller}
-
-```{r}
-#| eval: false
-#| echo: true
-#| code-line-numbers: "5-6"
-ggplot(data = global_waste_data_kg_year,
-       mapping = aes(x = income_id, 
-                     y = capita_kg_year,
-                     color = income_id)) +
-  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220
-  theme(legend.position = "none")
-
-```
+**Example: "How to remove a legend from a plot in R ggplot2"**
 
 ## Other sources for help
 
@@ -485,9 +471,10 @@ Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](h
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
-## 
+## Thanks
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
 Access slides as [PDF on GitHub]({{< var course.github-org >}}/website/raw/main/slides/lec-02-visualiation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 

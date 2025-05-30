@@ -9,7 +9,6 @@ execute:
   warning: false
 ---
 
-
 ## {{< fa bullseye >}} Learning Objectives
 
 ```{r}
