@@ -1,0 +1,41 @@
+author: "Lars Schöbitz"
+
+course:
+  code: "cven5999-ss25"
+  short-title: "cven5999-ss25"
+  long-title: "cven5999-ss25 - data science for openwashdata"
+  site: "https://cven5999-ss25-001.github.io/website/"
+  site-short: "cven5999-ss25-001.github.io/website/"
+  github-org: "https://github.com/cven5999-ss25-001"
+
+md-01:
+  title: "Get ready for the course"
+  date: "2025-06-02"
+
+md-02:
+  title: "Welcome! & Data Science Life-cycle"
+  date: "2025-06-09"
+  
+md-03:
+  title: "Exploratory data analysis using visualization & Data organization in spreadsheets"
+  date: "2025-06-16"
+  
+md-04:
+  title: "Data transformation and descriptive statistics"
+  date: "2025-06-23"
+  
+md-05:
+  title: "Concept of tidy data, vectors and pivoting"
+  date: "2025-06-30"
+  
+md-06:
+  title: "Joining data & data communication using Quarto"
+  date: "2025-07-07"
+  
+md-07:
+  title: "Capstone Project"
+  date: "2025-07-14"
+  
+md-08:
+  title: "Capstone Project submission due date"
+  date: "2025-07-21"
