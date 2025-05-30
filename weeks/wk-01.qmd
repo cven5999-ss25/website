@@ -13,6 +13,7 @@ bibliography: references.bib
 ```{=html}
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 ```
+
 This first week will be used to get you set up for the course. Work through the homework assignments one after the other.
 
 ## Learning Objectives
@@ -75,6 +76,11 @@ You can change your username later, but better to get this right the first time.
 -   <https://help.github.com/articles/what-happens-when-i-change-my-username/>
 :::
 
+### Create your personal unique ORCID iD
+
+1. Create your ORCID iD at: <https://orcid.org/register>
+2. Learn more about ORCID and why you should get one: <https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid>
+
 ### Log into Posit Cloud with GitHub account
 
 Here are the instructions to login to Posit Cloud using a GitHub account:
@@ -89,7 +95,7 @@ Note that you will need to have a GitHub account in order to use this login meth
 
 ### Join the course workspace on Posit Cloud
 
--   Open this link: <https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go->
+-   Open this link: [{{< var platforms.posit-cloud >}}{{< var platforms.posit-cloud-access >}}]({{< var platforms.posit-cloud >}}{{< var platforms.posit-cloud-access >}})
 
 ### Set up a GitHub Personal Access Token
 
@@ -110,13 +116,13 @@ Here are the step-by-step instructions to set up a GitHub personal access token:
 
 Remember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).
 
-### Fill out the pre-course survey
+### Complete the pre-course survey
 
--   Survey link: <https://forms.gle/MSA4wcEHxNXJk5ef9>
+-   Survey link: [{{< var platforms.pre-course-survey >}}]({{< var platforms.pre-course-survey >}})
 
 ### Open an issue on GitHub
 
--   Open the issue tracker on the website repository: <https://github.com/cven5873-ss23/website/issues>.
+-   Open the issue tracker on the website repository: [{{< var course.github-org >}}/website/issues]({{< var course.github-org >}}/website/issues).
 -   Click on "New issue" button.
 -   In the "Title" field
     -   write: "Homework assignments for week 1 completed".

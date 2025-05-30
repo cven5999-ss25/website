@@ -7,6 +7,11 @@ course:
   site: "https://cven5999-ss25.github.io/website/"
   site-short: "cven5999-ss25.github.io/website/"
   github-org: "https://github.com/cven5999-ss25"
+  
+platforms:
+  posit-cloud: "https://posit.cloud/spaces/658092/"
+  posit-cloud-access: "join?access_code=dLb2qZ63VzXDcDP8VCY614F70S8DhyS8ucqfzfoe"
+  pre-course-survey: "https://forms.gle/uCcoH4SvoTasDeEF7"
 
 md-01:
   title: "Get ready for the course"

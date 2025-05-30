@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>license – CVEN 5999 - Summer 2025</title>
+<title>claude – CVEN 5999 - Summer 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -162,8 +196,36 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#claude.md" id="toc-claude.md" class="nav-link active" data-scroll-target="#claude.md">CLAUDE.md</a>
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">Architecture</a>
+  <ul class="collapse">
+  <li><a href="#content-structure" id="toc-content-structure" class="nav-link" data-scroll-target="#content-structure">Content Structure</a></li>
+  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
+  <li><a href="#key-technologies" id="toc-key-technologies" class="nav-link" data-scroll-target="#key-technologies">Key Technologies</a></li>
+  </ul></li>
+  <li><a href="#development-commands" id="toc-development-commands" class="nav-link" data-scroll-target="#development-commands">Development Commands</a>
+  <ul class="collapse">
+  <li><a href="#building-the-site" id="toc-building-the-site" class="nav-link" data-scroll-target="#building-the-site">Building the Site</a></li>
+  <li><a href="#preview-during-development" id="toc-preview-during-development" class="nav-link" data-scroll-target="#preview-during-development">Preview During Development</a></li>
+  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
+  </ul></li>
+  <li><a href="#content-guidelines" id="toc-content-guidelines" class="nav-link" data-scroll-target="#content-guidelines">Content Guidelines</a>
+  <ul class="collapse">
+  <li><a href="#file-organization" id="toc-file-organization" class="nav-link" data-scroll-target="#file-organization">File Organization</a></li>
+  <li><a href="#yaml-frontmatter-patterns" id="toc-yaml-frontmatter-patterns" class="nav-link" data-scroll-target="#yaml-frontmatter-patterns">YAML Frontmatter Patterns</a></li>
+  <li><a href="#content-integration" id="toc-content-integration" class="nav-link" data-scroll-target="#content-integration">Content Integration</a></li>
+  </ul></li>
+  <li><a href="#r-environment" id="toc-r-environment" class="nav-link" data-scroll-target="#r-environment">R Environment</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -171,21 +233,109 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>All of the material here is available under the Creative Commons Attribution license.</p>
-<p>You are free:</p>
+<section id="claude.md" class="level1">
+<h1>CLAUDE.md</h1>
+<p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This is a Quarto-based course website for CVEN 5999: Special Topics - Data Analytics for Development, a summer course at CU Boulder. The site includes course materials, lecture slides, weekly content, and project information.</p>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
+<section id="content-structure" class="level3">
+<h3 class="anchored" data-anchor-id="content-structure">Content Structure</h3>
 <ul>
-<li><p>to Share - to copy and redistribute the material in any medium or format</p></li>
-<li><p>to Adapt - remix, transform, and build upon the material for any purpose, even commercially.</p></li>
+<li><strong>Main pages</strong>: Course overview (<code>index.qmd</code>), project details (<code>project/index.qmd</code>), schedule (<code>schedule.qmd</code>)</li>
+<li><strong>Weekly content</strong>: Located in <code>weeks/</code> directory (wk-01.qmd through wk-08.qmd)</li>
+<li><strong>Lecture slides</strong>: Located in <code>slides/</code> directory with RevealJS format (.qmd files)</li>
+<li><strong>Data</strong>: Course data and R scripts in <code>data/</code> directory</li>
+<li><strong>Images</strong>: Organized by lecture in <code>slides/img/</code> with subdirectories</li>
 </ul>
-<p>Under the following terms:</p>
+</section>
+<section id="configuration" class="level3">
+<h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
 <ul>
-<li><p>Attribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p></li>
-<li><p>No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p></li>
-<li><p>Notice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.</p></li>
+<li><strong>Main config</strong>: <code>_quarto.yml</code> - Controls website structure, theme, sidebar navigation</li>
+<li><strong>Variables</strong>: <code>_variables.yml</code> - Course-specific variables (dates, titles, GitHub org)</li>
+<li><strong>Theme</strong>: <code>theme.scss</code> and <code>slides.scss</code> for styling</li>
+<li><strong>Output</strong>: Builds to <code>docs/</code> directory for GitHub Pages deployment</li>
 </ul>
-<p>For the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode.</p>
+</section>
+<section id="key-technologies" class="level3">
+<h3 class="anchored" data-anchor-id="key-technologies">Key Technologies</h3>
+<ul>
+<li><strong>Quarto</strong>: Static site generator with R integration</li>
+<li><strong>RevealJS</strong>: For presentation slides</li>
+<li><strong>R/tidyverse</strong>: Data analysis and visualization in course content</li>
+<li><strong>GitHub Pages</strong>: Hosting platform (output to <code>docs/</code>)</li>
+</ul>
+</section>
+</section>
+<section id="development-commands" class="level2">
+<h2 class="anchored" data-anchor-id="development-commands">Development Commands</h2>
+<section id="building-the-site" class="level3">
+<h3 class="anchored" data-anchor-id="building-the-site">Building the Site</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the entire website</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Render specific content</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render slides/lec-01-welcome.qmd</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render weeks/wk-01.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="preview-during-development" class="level3">
+<h3 class="anchored" data-anchor-id="preview-during-development">Preview During Development</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Start preview server (watches for changes)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview specific slide deck</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview slides/lec-01-welcome.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="publishing" class="level3">
+<h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Publish to GitHub Pages (builds to docs/ directory)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="content-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="content-guidelines">Content Guidelines</h2>
+<section id="file-organization" class="level3">
+<h3 class="anchored" data-anchor-id="file-organization">File Organization</h3>
+<ul>
+<li>Weekly content follows naming convention: <code>wk-XX.qmd</code> where XX is week number</li>
+<li>Lecture slides follow: <code>lec-XX-topic.qmd</code> pattern</li>
+<li>Images organized in <code>slides/img/lec-XX/</code> subdirectories</li>
+<li>Data files in <code>data/</code> with R scripts for processing</li>
+</ul>
+</section>
+<section id="yaml-frontmatter-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="yaml-frontmatter-patterns">YAML Frontmatter Patterns</h3>
+<ul>
+<li>Course pages use standard Quarto frontmatter with <code>title</code>, <code>editor: source</code></li>
+<li>Slides use RevealJS format with custom theme, transitions, and branding</li>
+<li>Execution settings typically include <code>echo: false</code>, <code>warning: false</code> for clean output</li>
+</ul>
+</section>
+<section id="content-integration" class="level3">
+<h3 class="anchored" data-anchor-id="content-integration">Content Integration</h3>
+<ul>
+<li>Course data pulled from CSV files in <code>data/</code> directory using R code chunks</li>
+<li>Variables from <code>_variables.yml</code> referenced throughout content using Quarto syntax</li>
+<li>Cross-references between weeks, slides, and project materials via relative paths</li>
+</ul>
+</section>
+</section>
+<section id="r-environment" class="level2">
+<h2 class="anchored" data-anchor-id="r-environment">R Environment</h2>
+<ul>
+<li>Uses tidyverse packages for data manipulation and visualization</li>
+<li>Additional packages: countdown, gt, here, knitr for enhanced functionality</li>
+<li>Code execution with Quarto’s freeze feature for reproducible builds</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

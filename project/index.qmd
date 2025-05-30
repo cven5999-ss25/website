@@ -14,7 +14,7 @@ editor_options:
 ```{r}
 library(tidyverse)
 
-grading <- read_csv(here::here("data/tbl-05-capstone-project-grading.csv")) 
+grading <- read_csv(here::here("data/tbl-04-capstone-project-grading.csv")) 
 ```
 
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
@@ -76,7 +76,7 @@ grading |>
 
 ## {{< fa terminal >}} Get started
 
-1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
+1. Open the GitHub Organisation for the course: [{{< var course.github-org >}}]({{< var course.github-org >}})
 2. Locate the capstone-project repository with your username `capstone-project-GITHUB-USERNAME`
 3. Open your capstone-project repository
 4. Click on the green button titled "Code" (**see screenshot below**)

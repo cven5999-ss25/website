@@ -560,7 +560,7 @@ No slide breaks to remove, no citation style to change, no headings to re-level.
 
 ## Clone GitHub repository from GitHub
 
-1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
+1. Open the GitHub Organisation for the course: [{{< var course.github-org >}}]({{< var course.github-org >}})
 2. Locate the **wk-06** repository with your username `wk-06-GITHUB-USERNAME`
 3. Follow along with me
 
@@ -625,7 +625,7 @@ tibble(
 A large proportion of these slides are taken from [Mine Çetinkaya Rundel's "Hello Quarto" presentation](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title) & [Thomas Mock's "Quarto for the Curious" presentation](https://jthomasmock.github.io/quarto-presentation/#/TitleSlide)
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf)
+Access slides as [PDF on GitHub]({{< var course.github-org >}}/website/raw/main/slides/lec-05-communicate.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 
