@@ -3,10 +3,10 @@ author: "Lars Schöbitz"
 course:
   code: "cven5999-ss25"
   short-title: "cven5999-ss25"
-  long-title: "cven5999-ss25 - data science for openwashdata"
-  site: "https://cven5999-ss25-001.github.io/website/"
-  site-short: "cven5999-ss25-001.github.io/website/"
-  github-org: "https://github.com/cven5999-ss25-001"
+  long-title: "CVEN 5999 - Summer 2025"
+  site: "https://cven5999-ss25.github.io/website/"
+  site-short: "cven5999-ss25.github.io/website/"
+  github-org: "https://github.com/cven5999-ss25"
 
 md-01:
   title: "Get ready for the course"
