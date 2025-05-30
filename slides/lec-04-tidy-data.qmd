@@ -318,7 +318,7 @@ survey_data_small |>
 ## live-05a-vectors
 
 1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+2. Open the workspace for the course [{{< var course.code >}}]({{< var platforms.posit-cloud >}}content/all?sort=name_asc)
 3. Open your "course-materials" project
 4. Follow along with me
 
@@ -571,7 +571,7 @@ ggplot(data = waste_data_tidy,
 ## live-05a-tidyr-pivoting
 
 1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+2. Open the workspace for the course [{{< var course.code >}}]({{< var platforms.posit-cloud >}}content/all?sort=name_asc)
 3. Open your "course-materials" project
 4. Follow along with me
 

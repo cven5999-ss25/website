@@ -118,7 +118,7 @@ Rules of `dplyr` functions:
 ## live-04a-data-transformation
 
 1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+2. Open the workspace for the course [{{< var course.code >}}]({{< var platforms.posit-cloud >}}content/all?sort=name_asc)
 3. Open "Projects"
 4. Open your "course-materials" project
 5. Follow along with me
@@ -154,7 +154,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ## hw-04a-data-visualiation
 
 1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+2. Open the workspace for the course [{{< var course.code >}}]({{< var platforms.posit-cloud >}}content/all?sort=name_asc)
 3. Open "Projects"
 4. Open your "course-materials" project
 5. Follow along with me

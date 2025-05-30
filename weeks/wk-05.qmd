@@ -41,12 +41,12 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-learning-objectives.csv")) |>
 
 Homework assignment & learning reflection due: **Friday, 7th July**
 
-Complete the homework programming assignments that are in your project folder for week 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
+Complete the homework programming assignments that are in your project folder for week 5 on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all):
 
 - hw-05a-tidyr.qmd 
 
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for week 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) 
+Complete the learning reflection that is in your project folder for week 5 on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all) 
 
 - learning-05.qmd

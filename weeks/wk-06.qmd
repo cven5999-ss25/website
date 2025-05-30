@@ -45,7 +45,7 @@ Clone your Capstone Project repository to the workspace for the course on Posit 
 
 - [Follow the Instructions](../project/index.qmd)
 
-Complete the homework programming assignments that are in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
+Complete the homework programming assignments that are in your project folder for week 6 on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all):
 
 - hw-06a-section-01.qmd
 - hw-06b-section-02.qmd
@@ -54,6 +54,6 @@ Complete the homework programming assignments that are in your project folder fo
  
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+Complete the learning reflection that is in your project folder for week 6 on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all)
 
 - learning-06.qmd 

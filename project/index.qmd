@@ -83,7 +83,7 @@ grading |>
  
 ![](img/clone-repo.png)
 
-6. Open the Posit Cloud workspace for the course: [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+6. Open the Posit Cloud workspace for the course: [{{< var course.code >}}]({{< var platforms.posit-cloud >}}content/all?sort=name_asc)
 7. Open the **Content** page
 8. Click on **New Project -> New Project from Git Repository**
 9. Paste the link to your capstone-project repository from your clipboard
