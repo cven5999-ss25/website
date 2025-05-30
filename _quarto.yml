@@ -58,7 +58,7 @@ format:
     mainfont: "Atkinson Hyperlegible"
     include-in-header:
         - text: |
-            <script defer data-domain="quarto-rdmss-25.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="cven5999-ss25.github.io/website/" src="https://plausible.io/js/script.js"></script>
 
 freeze: auto
 editor: source

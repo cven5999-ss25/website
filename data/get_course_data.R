@@ -11,28 +11,36 @@ library(dplyr)
 
 # script ------------------------------------------------------------------
 
-# tbl-01-cven5837-ss23-course-schedule
+## course schedule
 
-googlesheets4::read_sheet("1soVpEtpSr32LWGcZGEgnv1MGyVoa81afUZitk1isuq4") |> 
+link_course_schedule <- "https://docs.google.com/spreadsheets/d/1xEBWgVJzLu1YtgtE6V36FOXbexsF5Jjp-U1koie19yk/edit?gid=0#gid=0"
+
+googlesheets4::read_sheet(link_course_schedule) |> 
   mutate(title = case_when(
     is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
     TRUE ~ title
-  )) %>% 
-  write_csv(here::here("data/tbl-01-cven5837-ss23-course-schedule.csv"))
+  )) |> 
+  write_csv(here::here("data/tbl-01-course-schedule.csv"))
 
-# tbl-02-cven5837-ss23-learning-objectives
+# learning objectives ------------------------------------------------------
 
-googlesheets4::read_sheet("14znMSlTpFh9K6h46OxZznAmg6tyoNkTGX4SWN1J7NfE") |> 
-  write_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv"))
+link_learning_objectives <- "https://docs.google.com/spreadsheets/d/15LB7cT-T4_Oiqdk3m8QMkgv_D_yLENkEX0IiYddRCF0/edit?gid=0#gid=0"
 
-# tbl-03-cven5837-ss23-grading-scheme
+googlesheets4::read_sheet(link_learning_objectives) |> 
+  write_csv(here::here("data/tbl-02-learning-objectives.csv"))
 
-googlesheets4::read_sheet("1KLEIEMuP_kD0U-OetubhElqUjtd90-tlSzdneBdsX_w") |> 
-  write_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv"))
+# grading scheme ----------------------------------------------------------
 
-# tbl-05-capstone-project-grading
+link_grading_scheme <- "https://docs.google.com/spreadsheets/d/1uwslpXXAaWOM1Lg3t47SLPbMWCHgPtYhNSnH7O5BlY8/edit?gid=0#gid=0"
 
-googlesheets4::read_sheet("1OB3jd_KSybN4H7y-ALhPHSg3ltXpf85ChNjFAUa9l3E") |> 
-  write_csv(here::here("data/tbl-05-capstone-project-grading.csv"))
+googlesheets4::read_sheet(link_grading_scheme) |> 
+  write_csv(here::here("data/tbl-03-grading-scheme.csv"))
+
+# capstone project grading ---------------------------------------------
+
+link_capstone_project_grading <- "https://docs.google.com/spreadsheets/d/1F35u_rdg9_nqkDdIZf2Kww1nYtyTNPGdMyg8gUmajYc/edit?gid=0#gid=0"
+
+googlesheets4::read_sheet(link_capstone_project_grading) |> 
+  write_csv(here::here("data/tbl-04-capstone-project-grading.csv"))
 
 

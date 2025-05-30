@@ -179,7 +179,7 @@
     "href": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
     "title": "Joining data & communicating results with Quarto",
     "section": "Quarto makes moving between formats straightforward",
-    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n{{&lt; fa file &gt;}} lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n{{&lt; fa file &gt;}} lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n{{&lt; fa file &gt;}} _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
   },
   {
     "objectID": "slides/lec-05-communicate.html#comfort-of-your-own-workspace",
@@ -828,8 +828,8 @@
     "objectID": "weeks/wk-05.html#slides",
     "href": "weeks/wk-05.html#slides",
     "title": "Week 5",
-    "section": "{{< fa display >}} Slides",
-    "text": "{{&lt; fa display &gt;}} Slides\nView slides in full screen | Download slides as PDF",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Week 5"
     ]
@@ -838,8 +838,8 @@
     "objectID": "weeks/wk-05.html#readings",
     "href": "weeks/wk-05.html#readings",
     "title": "Week 5",
-    "section": "{{< fa book >}} Readings",
-    "text": "{{&lt; fa book &gt;}} Readings\n\nRead R for Data Science - Section 12 - Tidy data\n\nRead R for Data Science - Section 15 - Factors",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 12 - Tidy data\n\nRead R for Data Science - Section 15 - Factors",
     "crumbs": [
       "Week 5"
     ]
@@ -848,8 +848,8 @@
     "objectID": "weeks/wk-05.html#homework-assignment",
     "href": "weeks/wk-05.html#homework-assignment",
     "title": "Week 5",
-    "section": "{{< fa code >}} Homework assignment",
-    "text": "{{&lt; fa code &gt;}} Homework assignment\nHomework assignment & learning reflection due: Friday, 7th July\nComplete the homework programming assignments that are in your project folder for week 5 on Posit Cloud:\n\nhw-05a-tidyr.qmd",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 7th July\nComplete the homework programming assignments that are in your project folder for week 5 on Posit Cloud:\n\nhw-05a-tidyr.qmd",
     "crumbs": [
       "Week 5"
     ]
@@ -858,8 +858,8 @@
     "objectID": "weeks/wk-05.html#learning-reflection",
     "href": "weeks/wk-05.html#learning-reflection",
     "title": "Week 5",
-    "section": "{{< fa pen-clip >}} Learning reflection",
-    "text": "{{&lt; fa pen-clip &gt;}} Learning reflection\nComplete the learning reflection that is in your project folder for week 5 on Posit Cloud\n\nlearning-05.qmd",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 5 on Posit Cloud\n\nlearning-05.qmd",
     "crumbs": [
       "Week 5"
     ]
@@ -916,8 +916,8 @@
     "objectID": "weeks/wk-02.html#slides",
     "href": "weeks/wk-02.html#slides",
     "title": "Week 2",
-    "section": "{{< fa display >}} Slides",
-    "text": "{{&lt; fa display &gt;}} Slides\nView slides in full screen | Download slides as PDF",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Week 2"
     ]
@@ -926,8 +926,8 @@
     "objectID": "weeks/wk-02.html#readings",
     "href": "weeks/wk-02.html#readings",
     "title": "Week 2",
-    "section": "{{< fa book >}} Readings",
-    "text": "{{&lt; fa book &gt;}} Readings\nRead R for Data Science - Section 1 - Introduction through Section 1.3.4\nRead R for Data Science - Section 2 - Introduction\nRead R for Data Science - Section 4 - Workflow basics",
+    "section": " Readings",
+    "text": "Readings\nRead R for Data Science - Section 1 - Introduction through Section 1.3.4\nRead R for Data Science - Section 2 - Introduction\nRead R for Data Science - Section 4 - Workflow basics",
     "crumbs": [
       "Week 2"
     ]
@@ -936,8 +936,8 @@
     "objectID": "weeks/wk-02.html#homework-assignment",
     "href": "weeks/wk-02.html#homework-assignment",
     "title": "Week 2",
-    "section": "{{< fa code >}} Homework assignment",
-    "text": "{{&lt; fa code &gt;}} Homework assignment\nComplete the homework programming assignment that is in your project folder for week 2 by Friday 16th June on Posit Cloud\n\nhw-02-data-science-lifecycle.qmd",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 2 by Friday 16th June on Posit Cloud\n\nhw-02-data-science-lifecycle.qmd",
     "crumbs": [
       "Week 2"
     ]
@@ -946,8 +946,8 @@
     "objectID": "weeks/wk-02.html#learning-reflection",
     "href": "weeks/wk-02.html#learning-reflection",
     "title": "Week 2",
-    "section": "{{< fa pen-clip >}} Learning reflection",
-    "text": "{{&lt; fa pen-clip &gt;}} Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on Posit Cloud\n\nlearning-02.qmd",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on Posit Cloud\n\nlearning-02.qmd",
     "crumbs": [
       "Week 2"
     ]
@@ -1033,8 +1033,8 @@
     "objectID": "weeks/wk-03.html#slides",
     "href": "weeks/wk-03.html#slides",
     "title": "Week 3",
-    "section": "{{< fa display >}} Slides",
-    "text": "{{&lt; fa display &gt;}} Slides\nView slides in full screen | Download slides as PDF",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Week 3"
     ]
@@ -1043,8 +1043,8 @@
     "objectID": "weeks/wk-03.html#readings",
     "href": "weeks/wk-03.html#readings",
     "title": "Week 3",
-    "section": "{{< fa book >}} Readings",
-    "text": "{{&lt; fa book &gt;}} Readings\n\nRead R for Data Science - Section 3 to 3.6 - Data visualisation\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics\nRead Data Organization in Spreadsheets",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 3 to 3.6 - Data visualisation\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics\nRead Data Organization in Spreadsheets",
     "crumbs": [
       "Week 3"
     ]
@@ -1053,8 +1053,8 @@
     "objectID": "weeks/wk-03.html#homework-assignment",
     "href": "weeks/wk-03.html#homework-assignment",
     "title": "Week 3",
-    "section": "{{< fa code >}} Homework assignment",
-    "text": "{{&lt; fa code &gt;}} Homework assignment\nComplete the homework programming assignment that is in your project folder for week 3 on Posit Cloud\n\nhw-03a-data-visualisation.qmd\nhw-03b-project-data.qmd",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 3 on Posit Cloud\n\nhw-03a-data-visualisation.qmd\nhw-03b-project-data.qmd",
     "crumbs": [
       "Week 3"
     ]
@@ -1063,8 +1063,8 @@
     "objectID": "weeks/wk-03.html#learning-reflection",
     "href": "weeks/wk-03.html#learning-reflection",
     "title": "Week 3",
-    "section": "{{< fa pen-clip >}} Learning reflection",
-    "text": "{{&lt; fa pen-clip &gt;}} Learning reflection\nComplete the learning reflection that is in your project folder for week 3 on Posit Cloud\n\nlearning-03.qmd",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 3 on Posit Cloud\n\nlearning-03.qmd",
     "crumbs": [
       "Week 3"
     ]
@@ -1093,8 +1093,8 @@
     "objectID": "weeks/wk-06.html#slides",
     "href": "weeks/wk-06.html#slides",
     "title": "Week 6",
-    "section": "{{< fa display >}} Slides",
-    "text": "{{&lt; fa display &gt;}} Slides\nView slides in full screen | Download slides as PDF",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Week 6"
     ]
@@ -1103,8 +1103,8 @@
     "objectID": "weeks/wk-06.html#readings",
     "href": "weeks/wk-06.html#readings",
     "title": "Week 6",
-    "section": "{{< fa book >}} Readings",
-    "text": "{{&lt; fa book &gt;}} Readings\n\nRead R for Data Science - Section 13 - Relational data",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 13 - Relational data",
     "crumbs": [
       "Week 6"
     ]
@@ -1113,8 +1113,8 @@
     "objectID": "weeks/wk-06.html#homework-assignment",
     "href": "weeks/wk-06.html#homework-assignment",
     "title": "Week 6",
-    "section": "{{< fa code >}} Homework assignment",
-    "text": "{{&lt; fa code &gt;}} Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\nFollow the Instructions\n\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\nFollow the Instructions\n\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd",
     "crumbs": [
       "Week 6"
     ]
@@ -1123,8 +1123,8 @@
     "objectID": "weeks/wk-06.html#learning-reflection",
     "href": "weeks/wk-06.html#learning-reflection",
     "title": "Week 6",
-    "section": "{{< fa pen-clip >}} Learning reflection",
-    "text": "{{&lt; fa pen-clip &gt;}} Learning reflection\nComplete the learning reflection that is in your project folder for week 6 on Posit Cloud\n\nlearning-06.qmd",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 6 on Posit Cloud\n\nlearning-06.qmd",
     "crumbs": [
       "Week 6"
     ]
@@ -1181,8 +1181,8 @@
     "objectID": "weeks/wk-04.html#slides",
     "href": "weeks/wk-04.html#slides",
     "title": "Week 4",
-    "section": "{{< fa display >}} Slides",
-    "text": "{{&lt; fa display &gt;}} Slides\nView slides in full screen | Download slides as PDF",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Week 4"
     ]
@@ -1191,8 +1191,8 @@
     "objectID": "weeks/wk-04.html#readings",
     "href": "weeks/wk-04.html#readings",
     "title": "Week 4",
-    "section": "{{< fa book >}} Readings",
-    "text": "{{&lt; fa book &gt;}} Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?",
     "crumbs": [
       "Week 4"
     ]
@@ -1201,8 +1201,8 @@
     "objectID": "weeks/wk-04.html#homework-assignment",
     "href": "weeks/wk-04.html#homework-assignment",
     "title": "Week 4",
-    "section": "{{< fa code >}} Homework assignment",
-    "text": "{{&lt; fa code &gt;}} Homework assignment\nHomework assignment & learning reflection due: Friday, 30th June\nComplete the homework programming assignments that are in your project folder for week 4 on Posit Cloud\n\nhw-04a-data-transformation.qmd",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 30th June\nComplete the homework programming assignments that are in your project folder for week 4 on Posit Cloud\n\nhw-04a-data-transformation.qmd",
     "crumbs": [
       "Week 4"
     ]
@@ -1211,8 +1211,8 @@
     "objectID": "weeks/wk-04.html#learning-reflection",
     "href": "weeks/wk-04.html#learning-reflection",
     "title": "Week 4",
-    "section": "{{< fa pen-clip >}} Learning reflection",
-    "text": "{{&lt; fa pen-clip &gt;}} Learning reflection\nComplete the learning reflection that is in your project folder for week 4 on Posit Cloud\n\nlearning-04.qmd",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 4 on Posit Cloud\n\nlearning-04.qmd",
     "crumbs": [
       "Week 4"
     ]
@@ -1668,8 +1668,8 @@
     "objectID": "project/index.html#learning-objectives",
     "href": "project/index.html#learning-objectives",
     "title": "Capstone Project",
-    "section": "{{< fa bullseye >}} Learning Objectives",
-    "text": "{{&lt; fa bullseye &gt;}} Learning Objectives\n\nLearners can apply the skills obtained during the course to write a short data analysis project report.",
+    "section": " Learning Objectives",
+    "text": "Learning Objectives\n\nLearners can apply the skills obtained during the course to write a short data analysis project report.",
     "crumbs": [
       "Capstone Project"
     ]
@@ -1678,8 +1678,8 @@
     "objectID": "project/index.html#github-repository",
     "href": "project/index.html#github-repository",
     "title": "Capstone Project",
-    "section": "{{< fa code >}} GitHub repository",
-    "text": "{{&lt; fa code &gt;}} GitHub repository\nA repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.\nThe repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report.",
+    "section": " GitHub repository",
+    "text": "GitHub repository\nA repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.\nThe repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report.",
     "crumbs": [
       "Capstone Project"
     ]
@@ -1688,8 +1688,8 @@
     "objectID": "project/index.html#github-issue-tracker",
     "href": "project/index.html#github-issue-tracker",
     "title": "Capstone Project",
-    "section": "{{< fa pen-clip >}} GitHub issue tracker",
-    "text": "{{&lt; fa pen-clip &gt;}} GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report.",
+    "section": " GitHub issue tracker",
+    "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report.",
     "crumbs": [
       "Capstone Project"
     ]
@@ -1698,8 +1698,8 @@
     "objectID": "project/index.html#submission-due-date",
     "href": "project/index.html#submission-due-date",
     "title": "Capstone Project",
-    "section": "{{< fa calendar-check >}} Submission due date",
-    "text": "{{&lt; fa calendar-check &gt;}} Submission due date\nThe due date for submission of the report is Friday, 28th July. Any commits after the due date will not be counted against the graded items.",
+    "section": " Submission due date",
+    "text": "Submission due date\nThe due date for submission of the report is Friday, 28th July. Any commits after the due date will not be counted against the graded items.",
     "crumbs": [
       "Capstone Project"
     ]
@@ -1708,8 +1708,8 @@
     "objectID": "project/index.html#graded-items",
     "href": "project/index.html#graded-items",
     "title": "Capstone Project",
-    "section": "{{< fa list-check >}} Graded items",
-    "text": "{{&lt; fa list-check &gt;}} Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n8\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80",
+    "section": " Graded items",
+    "text": "Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n8\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80",
     "crumbs": [
       "Capstone Project"
     ]
@@ -1718,8 +1718,8 @@
     "objectID": "project/index.html#get-started",
     "href": "project/index.html#get-started",
     "title": "Capstone Project",
-    "section": "{{< fa terminal >}} Get started",
-    "text": "{{&lt; fa terminal &gt;}} Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the Content page\nClick on New Project -&gt; New Project from Git Repository\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to Add packages from the base project\nClick the OK button\nRespond to the Questions & Answer for the Capstone Project report issue on the GitHub issue tracker of the repository and tag the course instructor with using the @ sign in combination with larnsce as the username",
+    "section": " Get started",
+    "text": "Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the Content page\nClick on New Project -&gt; New Project from Git Repository\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to Add packages from the base project\nClick the OK button\nRespond to the Questions & Answer for the Capstone Project report issue on the GitHub issue tracker of the repository and tag the course instructor with using the @ sign in combination with larnsce as the username",
     "crumbs": [
       "Capstone Project"
     ]
