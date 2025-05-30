@@ -4,13 +4,13 @@ project:
 
 website:
   page-navigation: true
-  title: "CVEN 5837 - Summer 2023"
+  title: "CVEN 5999 - Summer 2025"
   description: "Homepage for Special Topics - Data Analytics for Development"
-  site-url: "https://cven5837-ss23.github.io/website/"
+  site-url: "https://cven5999-ss25.github.io/website/"
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, Lars Schöbitz"
+    left: "&copy; Copyright 2025, Lars Schöbitz"
     background: "#D9E3E4"
   
   sidebar:
@@ -23,11 +23,8 @@ website:
     collapse-level: 1
     tools:
       - icon: github
-        href: https://github.com/cven5873-ss23
+        href: https://github.com/cven5999-ss25
         text: "GitHub organization"
-      - icon: code-square
-        href: https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go-
-        text: "Posit Cloud"
     contents: 
       - href: index.qmd
         text: Course Overview
@@ -48,14 +45,20 @@ website:
       - href: "project/index.qmd"
         text: "Capstone Project"
         
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [litera, theme.scss]
     code-copy: true
     code-overflow: wrap
+    link-external-icon: true
+    link-external-newwindow: true
     toc: true
+    mainfont: "Atkinson Hyperlegible"
+    include-in-header:
+        - text: |
+            <script defer data-domain="quarto-rdmss-25.github.io/website" src="https://plausible.io/js/script.js"></script>
 
-execute: 
-  freeze: auto
-
+freeze: auto
+editor: source

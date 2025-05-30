@@ -7,13 +7,11 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.340">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Lars Schöbitz">
-  <title>CVEN 5837 - Summer 2023 - Joining data &amp; communicating results with Quarto</title>
+  <title>CVEN 5999 - Summer 2025 – Joining data &amp; communicating results with Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -33,7 +31,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -44,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -72,7 +70,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -86,7 +84,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -97,7 +95,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -223,7 +221,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -430,9 +429,9 @@ Lars Schöbitz
 <p>…have multiple data frames</p>
 <p>…want to bring them together</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>professions <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/scientists/professions.csv"</span>)) </span>
-<span id="cb1-2"><a href="#cb1-2"></a>dates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/scientists/dates.csv"</span>)) </span>
-<span id="cb1-3"><a href="#cb1-3"></a>works <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"scientists/works.csv"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>professions <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/scientists/professions.csv"</span>)) </span>
+<span id="cb1-2"><a></a>dates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/scientists/dates.csv"</span>)) </span>
+<span id="cb1-3"><a></a>works <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"scientists/works.csv"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="data-women-in-science" class="slide level2 smaller">
@@ -440,7 +439,7 @@ Lars Schöbitz
 <p>Information on 10 women in science who changed the world</p>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">name</th>
@@ -493,7 +492,7 @@ Lars Schöbitz
 <div id="tabset-1-1">
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">name</th>
@@ -549,7 +548,7 @@ Lars Schöbitz
 <div id="tabset-1-2">
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">name</th>
@@ -606,7 +605,7 @@ Lars Schöbitz
 <div id="tabset-1-3">
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 84%">
@@ -666,7 +665,7 @@ Lars Schöbitz
 <h2>Desired output</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 19%">
@@ -764,15 +763,15 @@ Lars Schöbitz
 <div class="columns">
 <div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">names</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">names</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "name"       "profession"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">names</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">names</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "name"       "birth_year" "death_year"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">names</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">names</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "name"      "known_for"</code></pre>
 </div>
@@ -781,21 +780,20 @@ Lars Schöbitz
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">nrow</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">nrow</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">nrow</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">nrow</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">nrow</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">nrow</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 9</code></pre>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section></section>
 <section>
 <section id="joining-data-frames" class="title-slide slide level1 center" data-background-color="#0F4C81">
@@ -805,7 +803,7 @@ Lars Schöbitz
 <section id="joining-data-frames-1" class="slide level2">
 <h2>Joining data frames</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">something_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">something_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><code>left_join()</code>: all rows from x</li>
@@ -820,13 +818,13 @@ Lars Schöbitz
 <div class="columns">
 <div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
-<span id="cb15-3"><a href="#cb15-3"></a>  <span class="at">value_x =</span> <span class="fu">c</span>(<span class="st">"x1"</span>, <span class="st">"x2"</span>, <span class="st">"x3"</span>)</span>
-<span id="cb15-4"><a href="#cb15-4"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb15-2"><a></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
+<span id="cb15-3"><a></a>  <span class="at">value_x =</span> <span class="fu">c</span>(<span class="st">"x1"</span>, <span class="st">"x2"</span>, <span class="st">"x3"</span>)</span>
+<span id="cb15-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
      id value_x
@@ -840,13 +838,13 @@ Lars Schöbitz
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb18-2"><a href="#cb18-2"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>),</span>
-<span id="cb18-3"><a href="#cb18-3"></a>  <span class="at">value_y =</span> <span class="fu">c</span>(<span class="st">"y1"</span>, <span class="st">"y2"</span>, <span class="st">"y4"</span>)</span>
-<span id="cb18-4"><a href="#cb18-4"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>y <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb18-2"><a></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>),</span>
+<span id="cb18-3"><a></a>  <span class="at">value_y =</span> <span class="fu">c</span>(<span class="st">"y1"</span>, <span class="st">"y2"</span>, <span class="st">"y4"</span>)</span>
+<span id="cb18-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
      id value_y
@@ -856,8 +854,7 @@ Lars Schöbitz
 3     4 y4     </code></pre>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="left_join" class="slide level2 smaller">
 <h2><code>left_join()</code></h2>
@@ -865,14 +862,18 @@ Lars Schöbitz
 <div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="img/lec-05/left-join.gif" style="background-color: #FDF6E3;width:80.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">left_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">left_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 3
      id value_x value_y
@@ -882,18 +883,17 @@ Lars Schöbitz
 3     3 x3      &lt;NA&gt;   </code></pre>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="left_join-1" class="slide level2 smaller">
 <h2><code>left_join()</code></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>professions <span class="sc">%&gt;%</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a>  <span class="fu">left_join</span>(dates) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>professions <span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a></a>  <span class="fu">left_join</span>(dates) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 46%">
@@ -980,14 +980,18 @@ Lars Schöbitz
 <div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="img/lec-05/right-join.gif" style="background-color: #FDF6E3;width:80.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">right_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">right_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 3
      id value_x value_y
@@ -997,18 +1001,17 @@ Lars Schöbitz
 3     4 &lt;NA&gt;    y4     </code></pre>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="right_join-1" class="slide level2 smaller">
 <h2><code>right_join()</code></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>professions <span class="sc">%&gt;%</span></span>
-<span id="cb26-2"><a href="#cb26-2"></a>  <span class="fu">right_join</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>professions <span class="sc">%&gt;%</span></span>
+<span id="cb26-2"><a></a>  <span class="fu">right_join</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 46%">
@@ -1083,14 +1086,18 @@ Lars Schöbitz
 <div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="img/lec-05/full-join.gif" style="background-color: #FDF6E3;width:80.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">full_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">full_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
      id value_x value_y
@@ -1101,18 +1108,17 @@ Lars Schöbitz
 4     4 &lt;NA&gt;    y4     </code></pre>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="full_join-1" class="slide level2 smaller">
 <h2><code>full_join()</code></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>dates <span class="sc">%&gt;%</span></span>
-<span id="cb29-2"><a href="#cb29-2"></a>  <span class="fu">full_join</span>(works) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>dates <span class="sc">%&gt;%</span></span>
+<span id="cb29-2"><a></a>  <span class="fu">full_join</span>(works) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 13%">
 <col style="width: 7%">
@@ -1196,14 +1202,14 @@ Lars Schöbitz
 <section id="putting-it-altogether" class="slide level2 smaller">
 <h2>Putting it altogether</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>professions <span class="sc">%&gt;%</span></span>
-<span id="cb30-2"><a href="#cb30-2"></a>  <span class="fu">left_join</span>(dates) <span class="sc">%&gt;%</span></span>
-<span id="cb30-3"><a href="#cb30-3"></a>  <span class="fu">left_join</span>(works) <span class="sc">|&gt;</span> </span>
-<span id="cb30-4"><a href="#cb30-4"></a>  <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>professions <span class="sc">%&gt;%</span></span>
+<span id="cb30-2"><a></a>  <span class="fu">left_join</span>(dates) <span class="sc">%&gt;%</span></span>
+<span id="cb30-3"><a></a>  <span class="fu">left_join</span>(works) <span class="sc">|&gt;</span> </span>
+<span id="cb30-4"><a></a>  <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 19%">
@@ -1346,7 +1352,7 @@ Lars Schöbitz
 <div class="fragment fade-up">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/lec-05/horst_quarto_schematic.png" alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." width="1100"></p>
+<p><img data-src="img/lec-05/horst_quarto_schematic.png" class="quarto-figure quarto-figure-center" alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." width="1100"></p>
 </figure>
 </div>
 </div>
@@ -1370,42 +1376,40 @@ Lars Schöbitz
 <p><strong>Metadata (YAML)</strong></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb31-2"><a href="#cb31-2"></a><span class="fu">engine</span><span class="kw">:</span><span class="at"> knitr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb31-1"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb31-2"><a></a><span class="fu">engine</span><span class="kw">:</span><span class="at"> knitr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb32-2"><a href="#cb32-2"></a><span class="fu">engine</span><span class="kw">:</span><span class="at"> jupyter</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb32-1"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb32-2"><a></a><span class="fu">engine</span><span class="kw">:</span><span class="at"> jupyter</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
 </div>
 <div class="fragment">
 <p><strong>Code</strong></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown code number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1"></a><span class="in">```{r}</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb33-3"><a href="#cb33-3"></a></span>
-<span id="cb33-4"><a href="#cb33-4"></a>mtcars <span class="sc">|&gt;</span> </span>
-<span id="cb33-5"><a href="#cb33-5"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(cyl) <span class="sc">|&gt;</span> </span>
-<span id="cb33-6"><a href="#cb33-6"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(mpg))</span>
-<span id="cb33-7"><a href="#cb33-7"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown code number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb33-2"><a></a><span class="in">library(dplyr)</span></span>
+<span id="cb33-3"><a></a></span>
+<span id="cb33-4"><a></a><span class="in">mtcars |&gt; </span></span>
+<span id="cb33-5"><a></a><span class="in">  dplyr::group_by(cyl) |&gt; </span></span>
+<span id="cb33-6"><a></a><span class="in">  dplyr::summarize(mean = mean(mpg))</span></span>
+<span id="cb33-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown code number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1"></a><span class="in">```{python}</span></span>
-<span id="cb34-2"><a href="#cb34-2"></a><span class="im">from</span> siuba <span class="im">import</span> _, group_by, summarize</span>
-<span id="cb34-3"><a href="#cb34-3"></a><span class="im">from</span> siuba.data <span class="im">import</span> mtcars</span>
-<span id="cb34-4"><a href="#cb34-4"></a>(mtcars</span>
-<span id="cb34-5"><a href="#cb34-5"></a>  <span class="op">&gt;&gt;</span> group_by(_.cyl)</span>
-<span id="cb34-6"><a href="#cb34-6"></a>  <span class="op">&gt;&gt;</span> summarize(avg_mpg <span class="op">=</span> _.mpg.mean())</span>
-<span id="cb34-7"><a href="#cb34-7"></a>  )</span>
-<span id="cb34-8"><a href="#cb34-8"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown code number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a><span class="in">```{python}</span></span>
+<span id="cb34-2"><a></a><span class="in">from siuba import _, group_by, summarize</span></span>
+<span id="cb34-3"><a></a><span class="in">from siuba.data import mtcars</span></span>
+<span id="cb34-4"><a></a><span class="in">(mtcars</span></span>
+<span id="cb34-5"><a></a><span class="in">  &gt;&gt; group_by(_.cyl)</span></span>
+<span id="cb34-6"><a></a><span class="in">  &gt;&gt; summarize(avg_mpg = _.mpg.mean())</span></span>
+<span id="cb34-7"><a></a><span class="in">  )</span></span>
+<span id="cb34-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
 </div>
 <div class="fragment">
 <p><strong>Text</strong></p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu"># Heading 1</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a>This is a sentence with some **bold text**, some *italic text* and an </span>
-<span id="cb35-3"><a href="#cb35-3"></a><span class="al">![image](image.png)</span>{fig-alt="Alt text for this image"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a><span class="fu"># Heading 1</span></span>
+<span id="cb35-2"><a></a>This is a sentence with some **bold text**, some *italic text* and an </span>
+<span id="cb35-3"><a></a><span class="al">![image](image.png)</span>{fig-alt="Alt text for this image"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="quarto-makes-moving-between-formats-straightforward" class="slide level2 smaller takeaway">
@@ -1415,36 +1419,35 @@ Lars Schöbitz
 <div class="fragment">
 <p>Document</p>
 <div class="code-file sourceCode cell-code">
-<p><i class="fa-solid fa-file" aria-label="file"></i> lesson-1.qmd</p>
+<p>{{&lt; fa file &gt;}} lesson-1.qmd</p>
 </div>
-<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
-<span id="cb36-2"><a href="#cb36-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb36-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
+<span id="cb36-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="fragment">
 <p>Presentation</p>
 <div class="code-file sourceCode cell-code">
-<p><i class="fa-solid fa-file" aria-label="file"></i> lesson-1.qmd</p>
+<p>{{&lt; fa file &gt;}} lesson-1.qmd</p>
 </div>
-<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
-<span id="cb37-2"><a href="#cb37-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb37-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
+<span id="cb37-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="fragment">
 <p>Website</p>
 <div class="code-file sourceCode cell-code">
-<p><i class="fa-solid fa-file" aria-label="file"></i> _quarto.yml</p>
+<p>{{&lt; fa file &gt;}} _quarto.yml</p>
 </div>
-<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb38-2"><a href="#cb38-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb38-3"><a href="#cb38-3"></a></span>
-<span id="cb38-4"><a href="#cb38-4"></a><span class="fu">website</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb38-5"><a href="#cb38-5"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb38-6"><a href="#cb38-6"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb38-7"><a href="#cb38-7"></a><span class="at">      </span><span class="kw">-</span><span class="at"> lesson-1.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb38-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb38-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb38-3"><a></a></span>
+<span id="cb38-4"><a></a><span class="fu">website</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb38-5"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb38-6"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb38-7"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> lesson-1.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <ul>
 <li>It is traightforward in Quarto to move between output formats</li>
@@ -1481,8 +1484,12 @@ Lars Schöbitz
 </section>
 <section id="rich-documentation" class="slide level2">
 <h2>Rich Documentation</h2>
-
-<img data-src="img/lec-05/website-quarto.png" alt="Screenshot of the Quarto homepage at https://quarto.org/." class="r-stretch quarto-figure-center"></section></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://quarto.org/"><img data-src="img/lec-05/website-quarto.png" class="quarto-figure quarto-figure-center" alt="Screenshot of the Quarto homepage at https://quarto.org/."></a></p>
+</figure>
+</div>
+</section></section>
 <section>
 <section id="live-coding-exercise-write-a-report" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Live Coding Exercise: Write a report</h1>
@@ -1519,22 +1526,26 @@ Lars Schöbitz
 <li>spelling tbl not tab</li>
 <li>no spaces (use dashes in <code>label</code>)</li>
 </ul>
-<p>See <a href="#/cross-references">Table&nbsp;1</a>…</p>
+<p>See <a href="#/cross-references" class="quarto-xref">Table&nbsp;1</a>…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1"></a><span class="in">```{r}</span></span>
-<span id="cb39-2"><a href="#cb39-2"></a><span class="co">#| tbl-cap: "A table"</span></span>
-<span id="cb39-3"><a href="#cb39-3"></a><span class="co">#| label: tbl-simple-table</span></span>
-<span id="cb39-4"><a href="#cb39-4"></a></span>
-<span id="cb39-5"><a href="#cb39-5"></a><span class="fu">tibble</span>(</span>
-<span id="cb39-6"><a href="#cb39-6"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
-<span id="cb39-7"><a href="#cb39-7"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>)</span>
-<span id="cb39-8"><a href="#cb39-8"></a>) <span class="sc">%&gt;%</span> </span>
-<span id="cb39-9"><a href="#cb39-9"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span>
-<span id="cb39-10"><a href="#cb39-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb39-2"><a></a><span class="in">#| tbl-cap: "A table"</span></span>
+<span id="cb39-3"><a></a><span class="in">#| label: tbl-simple-table</span></span>
+<span id="cb39-4"><a></a></span>
+<span id="cb39-5"><a></a><span class="in">tibble(</span></span>
+<span id="cb39-6"><a></a><span class="in">  id = c(1, 2, 3),</span></span>
+<span id="cb39-7"><a></a><span class="in">  name = c("X", "Y", "Z")</span></span>
+<span id="cb39-8"><a></a><span class="in">) %&gt;% </span></span>
+<span id="cb39-9"><a></a><span class="in">  knitr::kable()</span></span>
+<span id="cb39-10"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-simple-table" class="cell quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simple-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: A table
+</figcaption>
+<div aria-describedby="tbl-simple-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-simple-table">
-<table>
-<caption>Table&nbsp;1: A table</caption>
+<table class="do-not-create-environment cell caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: right;">id</th>
@@ -1557,6 +1568,8 @@ Lars Schöbitz
 </tbody>
 </table>
 </div>
+</div>
+</figure>
 </div>
 </div>
 </section></section>
@@ -1595,9 +1608,11 @@ Lars Schöbitz
 <p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
-
-<img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="img/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>https://cven5873-ss23.github.io/website/</p>
+</div>
 </div>
 </section></section>
     </div>
@@ -1626,7 +1641,6 @@ Lars Schöbitz
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1881,18 +1895,7 @@ Lars Schöbitz
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1924,11 +1927,50 @@ Lars Schöbitz
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/cven5999-ss25\.github\.io\/website\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1938,8 +1980,17 @@ Lars Schöbitz
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1953,7 +2004,11 @@ Lars Schöbitz
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
