@@ -47,6 +47,6 @@ Complete the homework programming assignments that are in your project folder fo
 
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for week 5 on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all) 
+Complete the learning reflection that is in your project folder for week 5 by [**{{< var md-05.homework-due >}}**]{.highlight-yellow} on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all) 
 
 - learning-05.qmd
