@@ -164,7 +164,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ## Homework due dates
 
 - All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-04.html)
-- Homework assignment & learning reflection due: Friday, 30th June
+- Homework assignment & learning reflection due: [**{{< var md-04.homework-due >}}**]{.highlight-yellow}
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 

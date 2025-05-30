@@ -608,14 +608,14 @@ tibble(
 ## Homework due dates
 
 - All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-05.html)
-- Homework assignment & learning reflection due: **Friday, 14th July**
+- Homework assignment & learning reflection due: [**{{< var md-06.homework-due >}}**]{.highlight-yellow}
 
 # Capstone Project Report
 
 ## Information
 
 - All material shared on website by Monday, 17th July
-- Due date for report: Friday, 28th July
+- Due date for report: [**{{< var md-08.homework-due >}}**]{.highlight-yellow}
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 

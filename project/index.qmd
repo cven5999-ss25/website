@@ -46,7 +46,7 @@ The GitHub issue tracker of each student's capstone project repository is used t
 
 ## {{< fa calendar-check >}} Submission due date
 
-The due date for submission of the report is **Friday, 28th July**. Any commits after the due date will not be counted against the graded items. 
+The due date for submission of the report is [**{{< var md-08.homework-due >}}**]{.highlight-yellow}. Any commits after the due date will not be counted against the graded items. 
 
 ## {{< fa list-check >}} Graded items
 

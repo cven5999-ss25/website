@@ -43,12 +43,12 @@ Read [R for Data Science - Section 4 - Workflow basics](https://r4ds.had.co.nz/w
 
 ## {{< fa code >}} Homework assignment 
 
-Complete the homework programming assignment that is in your project folder for week 2 by **Friday 16th** June on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all)
+Complete the homework programming assignment that is in your project folder for week 2 by [**{{< var md-02.homework-due >}}**]{.highlight-yellow} on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all)
 
 - hw-02-data-science-lifecycle.qmd
 
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for week 2 on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all) 
+Complete the learning reflection that is in your project folder for week 2 by [**{{< var md-02.homework-due >}}**]{.highlight-yellow} on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all) 
 
 - learning-02.qmd
