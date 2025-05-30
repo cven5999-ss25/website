@@ -17,7 +17,6 @@ library(tidyverse)
 grading <- read_csv(here::here("data/tbl-04-capstone-project-grading.csv")) 
 ```
 
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see [Course Overview](../index.qmd)). The final two weeks are reserved for working on the report. 
 
