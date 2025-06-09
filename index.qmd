@@ -8,7 +8,7 @@ execute:
 
 # CVEN 5999: Special Topics - Data Analytics for Development
 
-Summer Online - Session C - June 2, 2022 - July 25, 2025; Monday 12:30 - 3:00 pm MT
+Summer Online - Session C - June 2, 2025 - July 25, 2025; Monday 12:30 - 3:00 pm MT
 
 Instructor: [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/)
 
@@ -51,8 +51,8 @@ readr::read_csv("data/tbl-01-course-schedule.csv") |>
 |----------|-------------------------------------------|
 | **Monday**   |  Lecture              |
 | **Tuesday**  |                                   |
-| **Wednesday** | Feedback (grading) on assignments from previous week |
-| **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
+| **Wednesday** |  |
+| **Thursday** |       Feedback (grading) on assignments from previous week   |
 | **Friday**   | Homework assignment and learning reflection are due             |
 
 # Assignments
