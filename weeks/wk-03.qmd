@@ -9,7 +9,6 @@ execute:
   warning: false
 ---
 
-
 ## {{< fa bullseye >}} Learning Objectives
 
 ```{r}
@@ -37,7 +36,6 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-learning-objectives.csv")) |>
 ## {{< fa book >}} Readings
 
 1. Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  
-
 2. Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
 
 3. Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
@@ -46,8 +44,8 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-learning-objectives.csv")) |>
 
 Complete the homework programming assignment that is in your project folder for week 3 by [**{{< var md-03.homework-due >}}**]{.highlight-yellow} on [Posit Cloud]({{< var platforms.posit-cloud >}}content/all)
 
-- hw-03a-data-visualisation.qmd 
-- hw-03b-project-data.qmd
+- hw-data-visualisation.qmd 
+- hw-project-data.qmd
 
 ## {{< fa pen-clip >}} Learning reflection
 
