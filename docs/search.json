@@ -487,7 +487,7 @@
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
     "title": "Exploratory data analysis using visualization & Data organization in spreadsheets",
     "section": "Other sources for help",
-    "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\nArtwork by @allison_horst"
+    "text": "Other sources for help\n\n\n\nPosit Community Forum: https://forum.posit.co/\nDocumentation websites: https://dplyr.tidyverse.org/\nbsky community: https://bsky.app/hashtag/RStats\n\n\n\n\n\n\nArtwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
@@ -669,7 +669,7 @@
     "href": "slides/lec-02-visualisation.html#section-3",
     "title": "Exploratory data analysis using visualization & Data organization in spreadsheets",
     "section": "",
-    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n\n cven5999-ss25.github.io/website/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
@@ -1632,5 +1632,26 @@
     "crumbs": [
       "Capstone Project"
     ]
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-2",
+    "href": "slides/lec-02-visualisation.html#section-2",
+    "title": "Exploratory data analysis using visualization & Data organization in spreadsheets",
+    "section": "",
+    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#live-data-visualiation",
+    "href": "slides/lec-02-visualisation.html#live-data-visualiation",
+    "title": "Exploratory data analysis using visualization & Data organization in spreadsheets",
+    "section": "live-data-visualiation",
+    "text": "live-data-visualiation\n\nHead over to posit.cloud\nOpen the workspace for the course cven5999-ss25\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#identify-a-dataset-for-the-capstone-project",
+    "href": "slides/lec-02-visualisation.html#identify-a-dataset-for-the-capstone-project",
+    "title": "Exploratory data analysis using visualization & Data organization in spreadsheets",
+    "section": "Identify a dataset for the capstone project",
+    "text": "Identify a dataset for the capstone project\n\nA dataset from your own research\nA dataset from your work\nA dataset that you find interesting and is available as open data"
   }
 ]

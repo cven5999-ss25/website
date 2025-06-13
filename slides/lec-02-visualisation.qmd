@@ -42,7 +42,7 @@ my_colors <- c("#ED6D37", "#901C6C", "#18A5C5", "#A6CE8F")
 Artwork by [@allison_horst](https://twitter.com/allison_horst) 
 :::
 
-# Solving coding problems {background-color="#4C326A"}
+# Solving coding problems {background-color="#0F4C81"}
 
 ## Tipps for search engines 
 
@@ -105,10 +105,9 @@ Artwork by [@allison_horst](https://twitter.com/allison_horst)
 
 ::: {.column width="50%"}
 
-- The [Canvas Discussion pages](https://canvas.colorado.edu/courses/94577/discussion_topics)
-- RStudio Community Forum: https://community.rstudio.com/
-- Documentation websites: https://dplyr.tidyverse.org/
-- Twitter community: [#rstats](https://twitter.com/search?q=%23rstats&src=typd) 
+- Posit Community Forum: <https://forum.posit.co/>
+- Documentation websites: <https://dplyr.tidyverse.org/>
+- bsky community: <https://bsky.app/hashtag/RStats>
 :::
 
 ::: {.column width="50%"}
@@ -122,60 +121,6 @@ Artwork by [@allison_horst](https://twitter.com/allison_horst)
 ::: aside
 Artwork by [@allison_horst](https://www.allisonhorst.com/)
 :::
-
-## Minimal reproducible example (reprex)
-
-- Needed when asking questions online
-- Good support information: https://www.tidyverse.org/help/#reprex
-
-## {background-image="img/lec-02/code_hero.jpg" background-size="contain"} 
-
-::: aside
-Artwork by [@allison_horst](https://www.allisonhorst.com/)
-:::
-
-# Homework assignment solutions
-
-## remember: `git clone`  
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.001.png)
-
-
-## remember: `git commit` 
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.002.png)
-
-## remember: `git push` 
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.003.png)
-
-## remember: `git push` 
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.004.png)
-
-## collaborate: `git clone`
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.005.png)
-
-## track work: `git commit` 
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.006.png)
-
-## update: `git ???` 
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.007.png)
-
-## update: `git push`
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.008.png)
-
-## `git ???` 
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.009.png)
-
-## new: `git pull`
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.010.png)
 
 ## Learning Objectives (for this week)
 
@@ -317,10 +262,10 @@ ggplot(data = gapminder_yr_2007,
 
 ## {background-image="img/lec-02/plot-waste-generation-gdp.png" background-size="contain"} 
 
-## live-02a-data-visualiation 
+## live-data-visualiation 
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
+1. Head over to posit.cloud
+2. Open the workspace for the course [{{< var course.code >}}]({{< var platforms.posit-cloud >}}content/all?sort=name_asc)
 3. Open "Projects"
 4. Open the "course-materials" project
 5. Follow along with me
@@ -395,25 +340,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 :::
 
-## data-to-viz.com 
-
-# Data Collection Tools {background-color="#0F4C81"}
-
-## Data Collection Tools
-
-- Questionnaires for survey based data 
-- Spreadsheets for manual experimental/observational data
-- Sensors for automated near real-time data 
-
-## Survey tools
-
-**Commonly used in the Global Engineering and Development sector**
-
-- KOBO Toolbox
-- mWater
-- OpenDataKit
-
-## Data Organisation in Spreadsheets
+# Data Organisation in Spreadsheets
 
 ```{r}
 knitr::include_graphics("img/lec-02/data-org-paper.png")
@@ -458,24 +385,24 @@ Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](h
 
 # Homework week 3 {background-color="#0F4C81"}
 
-## Bring your own data
+## Identify a dataset for the capstone project
 
-- Generate data doing a short survey or observational study  
-- Find a data online that interests you
-- Use a dataset that you already have available
+- A dataset from your own research
+- A dataset from your work
+- A dataset that you find interesting and is available as open data 
 
 ## Homework due dates
 
-- All material on [course website]({{< var course.site >}}weeks/wk-02.html)
+- All material on [course website]({{< var course.site >}}weeks/wk-03.html)
 - Homework assignment & learning reflection due: [**{{< var md-03.homework-due >}}**]{.highlight-yellow} 
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
-## Thanks
+##
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/
 
-Access slides as [PDF on GitHub]({{< var course.github-org >}}/website/raw/main/slides/lec-02-visualiation.pdf)
+Access slides as [PDF on GitHub]({{< var course.github-org >}}/website/raw/main/slides/lec-02-visualisation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 
