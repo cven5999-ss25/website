@@ -223,6 +223,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#content-integration" id="toc-content-integration" class="nav-link" data-scroll-target="#content-integration">Content Integration</a></li>
   </ul></li>
   <li><a href="#r-environment" id="toc-r-environment" class="nav-link" data-scroll-target="#r-environment">R Environment</a></li>
+  <li><a href="#project-management-with-github-cli" id="toc-project-management-with-github-cli" class="nav-link" data-scroll-target="#project-management-with-github-cli">Project Management with GitHub CLI</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -331,6 +332,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Uses tidyverse packages for data manipulation and visualization</li>
 <li>Additional packages: countdown, gt, here, knitr for enhanced functionality</li>
 <li>Code execution with Quarto’s freeze feature for reproducible builds</li>
+</ul>
+</section>
+<section id="project-management-with-github-cli" class="level2">
+<h2 class="anchored" data-anchor-id="project-management-with-github-cli">Project Management with GitHub CLI</h2>
+<ul>
+<li>List issues: <code>gh issue list</code></li>
+<li>View issue details: <code>gh issue view 80</code> (e.g., for issue #80 “Rename geographies parameter”)</li>
+<li>Create branch for issue: <code>gh issue develop 80</code></li>
+<li>Checkout branch: <code>git checkout 80-rename-geographies-parameter-to-entities</code></li>
+<li>Create pull request: <code>gh pr create --title "Rename geographies parameter to entities" --body "Implements #80"</code></li>
+<li>List pull requests: <code>gh pr list</code></li>
+<li>View pull request: <code>gh pr view PR_NUMBER</code></li>
 </ul>
 
 

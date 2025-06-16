@@ -77,3 +77,14 @@ quarto publish gh-pages
 - Uses tidyverse packages for data manipulation and visualization
 - Additional packages: countdown, gt, here, knitr for enhanced functionality
 - Code execution with Quarto's freeze feature for reproducible builds
+
+
+## Project Management with GitHub CLI
+
+- List issues: `gh issue list`
+- View issue details: `gh issue view 80` (e.g., for issue #80 "Rename geographies parameter")
+- Create branch for issue: `gh issue develop 80`
+- Checkout branch: `git checkout 80-rename-geographies-parameter-to-entities`
+- Create pull request: `gh pr create --title "Rename geographies parameter to entities" --body "Implements #80"`
+- List pull requests: `gh pr list`
+- View pull request: `gh pr view PR_NUMBER`
